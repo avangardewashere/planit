@@ -1,0 +1,62 @@
+.container {
+  background: #f6f9ff;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 390rem;
+  height: 239rem;
+  padding: 71rem 24rem 16rem 24rem;
+
+  .actionButtons {
+    display: flex;
+    width: 345rem;
+    height: 48rem;
+    align-items: center;
+    justify-content: space-between;
+    .image {
+      width: 48rem;
+      height: 48rem;
+    }
+  }
+  .greetings {
+    width: 345rem;
+    height: 48rem;
+    display: flex;
+    font-size: 12rem;
+    color: #999;
+    justify-content: space-between;
+    .greet {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    //   background: red;
+      text-align: start;
+      justify-content: center;
+	  b{
+		width:800;
+		font-size: 14rem;
+		color:#222;
+	  }
+	  span{
+		font-size:10rem;
+	  }
+    }
+    .mood {
+      width: 48rem;
+      display: flex;
+      .emoji {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 48rem;
+        height: 48rem;
+        border-radius: 50%;
+        background: #ddf2fc;
+        font-size: 25rem;
+      }
+    }
+  }
+}

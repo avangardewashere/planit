@@ -40,3 +40,27 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+@import "normalize.css";
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(100vw / 390);
+}
+#root {
+  text-align: center;
+  height: 100vh;
+}
+
+.image{
+  color:red;
+  background:#00a6ff;
+  width:20rem;
+  height:20rem;
+  border-radius: 50%;;
+  font-size:12rem;
+  
+}
