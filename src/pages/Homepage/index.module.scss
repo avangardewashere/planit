@@ -9,14 +9,14 @@
   width: 390rem;
   height: 239rem;
   padding: 71rem 24rem 16rem 24rem;
-
+  gap:12rem;
   .actionButtons {
     display: flex;
     width: 345rem;
     height: 48rem;
     align-items: center;
     justify-content: space-between;
-    .image {
+    img {
       width: 48rem;
       height: 48rem;
     }
@@ -32,17 +32,17 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-    //   background: red;
+      //   background: red;
       text-align: start;
       justify-content: center;
-	  b{
-		width:800;
-		font-size: 14rem;
-		color:#222;
-	  }
-	  span{
-		font-size:10rem;
-	  }
+      b {
+        width: 800;
+        font-size: 14rem;
+        color: #222;
+      }
+      span {
+        font-size: 10rem;
+      }
     }
     .mood {
       width: 48rem;
@@ -58,5 +58,42 @@
         font-size: 25rem;
       }
     }
+  }
+
+  .switch {
+    width: 345rem;
+    height: 28rem;
+    margin-inline: auto;
+    background: #eaecf0;
+    color: #686873;
+    font-size: 14rem;
+    display: flex;
+	border-radius: 28rem;;
+	position: relative;
+    .sbutton {
+      width: 170rem;
+      height: 28rem;
+      display: flex;
+      justify-content: center
+	  ;align-items: center;
+	  position: inherit;
+
+    }
+	.floatSwitch{
+		width:170rem;
+		position: absolute;
+		top:2rem;
+		left:2rem;
+		background: white;
+		height: 24rem;
+
+		border-radius: 28rem;;
+		transition: all .3s linear;
+	}
+  }
+
+  .animateSwitch{
+	transform: translateX(170.5rem);
+
   }
 }
