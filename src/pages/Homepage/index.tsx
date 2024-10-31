@@ -3,6 +3,7 @@ import clsx from "clsx";
 import style from "./index.module.scss";
 import calendarImg from "@/assets/images/header/calendar.png";
 import bellImg from "@/assets/images/header/bell.png";
+import DateSwiper from "../component/DateSwiper";
 
 const Homepage = memo(() => {
   const [type, setType] = useState(false);
@@ -54,6 +55,7 @@ const Homepage = memo(() => {
           </div>
         </div>
       </div>
+      <DateSwiper />
     </div>
   );
 });

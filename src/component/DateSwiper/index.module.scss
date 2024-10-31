@@ -1,0 +1,30 @@
+.container{
+	width:390rem;
+	height:80rem;
+	display: flex;
+	align-items: center;
+	padding:12rem 0;
+}
+.dayCard{
+	display:flex;
+	flex-direction: column;
+	width:48rem;
+	height:64rem;
+	gap:4rem;
+	align-items: center;
+	justify-content: center;
+	background:white;
+	border-radius: 16rem;
+	border:.3rem solid #99999910;
+	box-shadow:.5rem .5rem .5rem .5rem #88888820;
+	color:#444;
+	.date{
+		font-size:20rem;
+		font-weight:bolder;
+	}
+	.day{
+		font-size:12rem;
+		font-weight:400;
+
+	}
+}
