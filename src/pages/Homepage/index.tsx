@@ -5,6 +5,7 @@ import calendarImg from "@/assets/images/header/calendar.png";
 import bellImg from "@/assets/images/header/bell.png";
 import DateSwiper from "../../component/DateSwiper";
 import Progression from "../../component/Progression";
+import Challenge from "../../component/Sections/Challenges";
  
 
 const Homepage = memo(() => {
@@ -22,7 +23,7 @@ const Homepage = memo(() => {
 
   return (
     <div className={clsx(style.container)}>
-      <div className={clsx(style.header)}>
+       <div className={clsx(style.header)}>
         <div className={clsx(style.actionButtons)}>
           <img onClick={handleCalendar} src={calendarImg} alt="planit-calendar-icon" />
           <img onClick={handleBell}src={bellImg} alt="planit-bell-icon" />
@@ -59,8 +60,9 @@ const Homepage = memo(() => {
       </div>
       <div className={clsx(style.body)}>
       <DateSwiper />
-      <Progression />
-      </div>
+      <Progression />  
+      <Challenge />
+      </div> 
     </div>
   );
 });

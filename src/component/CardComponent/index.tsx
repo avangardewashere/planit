@@ -1,12 +1,12 @@
 import { memo } from "react";
 import clsx from "clsx";
 import style from "./index.module.scss";
-import { ProgressCircle } from "antd-mobile";
+import { ProgressBar, ProgressCircle } from "antd-mobile";
 
 interface CardComponentProps {
   type?: "challenge" | "task";
   subject?: string;
-  img: string;
+  img?: string;
   details?: string;
 }
 interface IconHandlerProps {
@@ -15,9 +15,9 @@ interface IconHandlerProps {
 }
 
 const CardComponent: React.FC<CardComponentProps> = memo((props) => {
-  const { type = "challenge" , subject, img, details } = props;
+  const { type = "challenge", subject, img, details } = props;
   return (
-    <div className={clsx(style.container)}>
+    <div className={clsx(style.container,type ==="challenge" && style.chalPadding)}>
       <IconHandler img={img} type={type} />
       <div className={clsx(style.body)}>
         <div className={clsx(style.subject)}>{subject || "sample"}</div>
@@ -31,6 +31,7 @@ const CardComponent: React.FC<CardComponentProps> = memo((props) => {
         </div>
         <div className={clsx(style.joinersDetails)}>2 friends joined</div>
       </div>
+      {type === "challenge" && <ProgressBar style={{'--track-width':"4rem"}} className={clsx(style.challengeProgress)} percent={25} />}
     </div>
   );
 });
@@ -41,7 +42,7 @@ const IconHandler: React.FC<IconHandlerProps> = memo((props) => {
     <>
       {type === "challenge" ? (
         // <img src="" alt="" />
-		<div className={clsx("image")}></div>
+        <div className={clsx("image", style.challengeImg)}></div>
       ) : (
         <ProgressCircle>
           <img src="" alt="" />
