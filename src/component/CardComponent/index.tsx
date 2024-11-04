@@ -44,8 +44,9 @@ const IconHandler: React.FC<IconHandlerProps> = memo((props) => {
         // <img src="" alt="" />
         <div className={clsx("image", style.challengeImg)}></div>
       ) : (
-        <ProgressCircle>
-          <img src="" alt="" />
+        <ProgressCircle className={clsx(style.taskProgress)} style={{'--size':"30rem"}}>
+          {/* <img src="" alt="" /> */}
+		  <div className={clsx("image", style.taskImage)}></div>
         </ProgressCircle>
       )}
     </>

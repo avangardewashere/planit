@@ -58,3 +58,14 @@
   bottom: 4rem;
   height: 10rem;
 }
+
+.taskProgress{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	.taskImage{
+		width: 15rem ;
+		height: 15rem; 
+		margin: auto;;
+	}
+}

@@ -6,6 +6,7 @@ import bellImg from "@/assets/images/header/bell.png";
 import DateSwiper from "../../component/DateSwiper";
 import Progression from "../../component/Progression";
 import Challenge from "../../component/Sections/Challenges";
+import TaskSection from "../../component/Sections/Task";
  
 
 const Homepage = memo(() => {
@@ -62,6 +63,7 @@ const Homepage = memo(() => {
       <DateSwiper />
       <Progression />  
       <Challenge />
+      <TaskSection/>
       </div> 
     </div>
   );

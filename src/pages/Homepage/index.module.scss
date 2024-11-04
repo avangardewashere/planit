@@ -1,7 +1,7 @@
 .container {
   background: #f6f9ff;
   min-height: 100vh;
-  width: 390rem;;
+  // width: 390rem;;
   .body{
     display: flex;
     flex-direction: column;
@@ -13,8 +13,8 @@
   flex-direction: column;
   background: white;
   width: 390rem;
-  height: 239rem;
-  padding: 71rem 24rem 16rem 24rem;
+  height: 200rem; //239 originally
+  padding:32rem 24rem 16rem 24rem;
   gap:12rem;
   .actionButtons {
     display: flex;
