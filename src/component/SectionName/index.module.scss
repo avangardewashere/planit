@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 345rem;
+  height: 20rem;
+  font-size: 16rem;
+  align-items: center;
+  margin-inline:auto;
+  .viewAll {
+    font-size: 14rem;
+    color: #00a6ff;
+  }
+}
