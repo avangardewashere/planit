@@ -3,7 +3,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --gradient-blue:linear-gradient(25deg,#6B73FF,#000DFF);
+  
 }
+
+ 
 
 .logo {
   height: 6em;
@@ -63,4 +67,30 @@ html {
   border-radius: 50%;;
   font-size:12rem;
   
+}
+
+
+/* custom fonts */
+@font-face {
+  font-family: abnb-light;
+  src: url("./assets/fonts/AirbnbCereal_W_Lt.otf") format("woff2");
+  font-style: normal;
+ font-weight: 100 !important;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: abnb-md;
+  src: url("./assets/fonts/AirbnbCereal_W_Md.otf") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: abnb-bold;
+  src: url("./assets/fonts/AirbnbCereal_W_XBd.otf") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
 }

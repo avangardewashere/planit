@@ -1,6 +1,12 @@
 .container {
   background: #f6f9ff;
   min-height: 100vh;
+
+  .body{
+    display: flex;
+    flex-direction: column;
+    gap:16rem;
+  }
 }
 .header {
   display: flex;
@@ -96,4 +102,6 @@
 	transform: translateX(170.5rem);
 
   }
+
+
 }

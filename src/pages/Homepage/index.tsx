@@ -3,7 +3,9 @@ import clsx from "clsx";
 import style from "./index.module.scss";
 import calendarImg from "@/assets/images/header/calendar.png";
 import bellImg from "@/assets/images/header/bell.png";
-import DateSwiper from "../component/DateSwiper";
+import DateSwiper from "../../component/DateSwiper";
+import Progression from "../../component/Progression";
+ 
 
 const Homepage = memo(() => {
   const [type, setType] = useState(false);
@@ -55,7 +57,10 @@ const Homepage = memo(() => {
           </div>
         </div>
       </div>
+      <div className={clsx(style.body)}>
       <DateSwiper />
+      <Progression />
+      </div>
     </div>
   );
 });
