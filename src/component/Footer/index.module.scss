@@ -3,4 +3,18 @@
 	height:64rem;
 	background:white;
 	border-radius:30rem;
+	border:1rem #CDCDD0 solid;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+
+	.plusIcon{
+		background:var(--gradient-blues);
+		display:flex;
+		width:30rem;
+		height: 30rem;
+		align-items: center;
+		justify-content: center;
+		
+	}
 }
