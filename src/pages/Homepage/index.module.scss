@@ -8,6 +8,7 @@
     gap:16rem;
   }
 }
+
 .header {
   display: flex;
   flex-direction: column;
@@ -16,6 +17,7 @@
   height: 200rem; //239 originally
   padding:32rem 24rem 16rem 24rem;
   gap:12rem;
+
   .actionButtons {
     display: flex;
     width: 345rem;
@@ -27,6 +29,7 @@
       height: 48rem;
     }
   }
+
   .greetings {
     width: 345rem;
     height: 48rem;
