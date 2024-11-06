@@ -48,6 +48,23 @@
   }
 }
 
+.taskJoiners{
+  display:flex;
+  flex-direction: row !important;
+  gap:10rem;
+  align-items: center;
+}
+
+.joinButton{
+  font-size:24rem;
+  line-height: 14rem;
+  width:24rem;
+  height:24rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .chalPadding {
   padding-bottom: 8rem;
 }

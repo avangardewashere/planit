@@ -26,7 +26,7 @@ const Homepage = memo(() => {
 
   return (
     <div className={clsx(style.container)}>
-       <div className={clsx(style.header)}>
+       {/* <div className={clsx(style.header)}>
         <div className={clsx(style.actionButtons)}>
           <img onClick={handleCalendar} src={calendarImg} alt="planit-calendar-icon" />
           <img onClick={handleBell}src={bellImg} alt="planit-bell-icon" />
@@ -60,13 +60,13 @@ const Homepage = memo(() => {
             Clubs
           </div>
         </div>
-      </div>
-      <div className={clsx(style.body)}>
-      <DateSwiper />
+      </div> */}
+      <div className={clsx(style.body)}> 
+      {/* <DateSwiper />
       <Progression />  
-      <Challenge />
+      <Challenge /> */}
       <TaskSection/>
-      <Footer />
+      {/* <Footer /> */}
       </div> 
     </div>
   );
