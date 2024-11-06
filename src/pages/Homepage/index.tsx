@@ -7,6 +7,8 @@ import DateSwiper from "../../component/DateSwiper";
 import Progression from "../../component/Progression";
 import Challenge from "../../component/Sections/Challenges";
 import TaskSection from "../../component/Sections/Task";
+import Footer from "../../component/Footer";
+ 
  
 
 const Homepage = memo(() => {
@@ -64,6 +66,7 @@ const Homepage = memo(() => {
       <Progression />  
       <Challenge />
       <TaskSection/>
+      <Footer />
       </div> 
     </div>
   );

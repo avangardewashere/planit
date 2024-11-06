@@ -21,11 +21,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "baseUrl": "./",
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@utils/*": ["src/utils/*"],
-      "@images/*": ["src/assets/images/*"]
-    }
+    // "paths": {
+    //   // "@component/*": ["src/component/*"],
+    //   "@utils/*": ["src/utils/*"],
+    //   "@images/*": ["./src/assets/images/*"]
+    // }
   },
   "include": ["src"]
 }

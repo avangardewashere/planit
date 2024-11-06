@@ -1,12 +1,10 @@
 import { memo } from 'react';
 import clsx from 'clsx';
 import style from './index.module.scss';
-import homeImg from '@images/footer/Home.png'
-import discoverImg from "@images/footer/discover.png"
-import acheiveImg from "@images/footer/achievements.png"
-import accountImg from "@images/footer/Profile.png"
-
-
+import homeImg from './../../assets/images/footer/Home.png'
+import discoverImg from "./../../assets/images/footer/discover.png"
+import acheiveImg from "./../../assets/images/footer/achievements.png"
+import accountImg from "./../../assets/images/footer/Profile.png"
 
 const Footer = memo(() => {
   return (
