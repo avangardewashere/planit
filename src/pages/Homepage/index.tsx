@@ -8,29 +8,29 @@ import Progression from "../../component/Progression";
 import Challenge from "../../component/Sections/Challenges";
 import TaskSection from "../../component/Sections/Task";
 import Footer from "../../component/Footer";
- 
- 
 
 const Homepage = memo(() => {
   const [type, setType] = useState(false);
   const handleType = () => {
     setType(!type);
   };
-  const handleCalendar  = () =>{
-    alert("calendar")
-  }
-  const handleBell  = () =>{
-    alert("Bell")
-  }
-
+  const handleCalendar = () => {
+    alert("calendar");
+  };
+  const handleBell = () => {
+    alert("Bell");
+  };
 
   return (
     <div className={clsx(style.container)}>
-       {/* <div className={clsx(style.header)}>
+      <div className={clsx(style.header)}>
         <div className={clsx(style.actionButtons)}>
-          <img onClick={handleCalendar} src={calendarImg} alt="planit-calendar-icon" />
-          <img onClick={handleBell}src={bellImg} alt="planit-bell-icon" />
-    
+          <img
+            onClick={handleCalendar}
+            src={calendarImg}
+            alt="planit-calendar-icon"
+          />
+          <img onClick={handleBell} src={bellImg} alt="planit-bell-icon" />
         </div>
 
         <div className={clsx(style.greetings)}>
@@ -60,14 +60,14 @@ const Homepage = memo(() => {
             Clubs
           </div>
         </div>
-      </div> */}
-      <div className={clsx(style.body)}> 
-      {/* <DateSwiper />
-      <Progression />  
-      <Challenge /> */}
-      <TaskSection/>
-      {/* <Footer /> */}
-      </div> 
+      </div>
+      <div className={clsx(style.body)}>
+        <DateSwiper />
+        <Progression />
+        <Challenge />
+        <TaskSection />
+        <Footer />
+      </div>
     </div>
   );
 });

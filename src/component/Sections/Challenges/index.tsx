@@ -2,7 +2,7 @@ import { memo } from "react";
 import clsx from "clsx";
 import style from "./index.module.scss";
 import SectionName from "../../SectionName";
-import CardComponent from "../../CardComponent";
+import ChallengeCard from "../../../component/CardComponent/Challenge";
 
 const Challenge = memo(() => {
   return (
@@ -11,7 +11,7 @@ const Challenge = memo(() => {
         section={"Challenges"}
         viewAll={() => alert("view ALl")}
       />
-	  <CardComponent img={""} />  
+	    <ChallengeCard />
     </div>
   );
 });
