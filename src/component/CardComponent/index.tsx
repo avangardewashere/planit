@@ -30,7 +30,7 @@ const CardComponent: React.FC<CardComponentProps> = memo((props) => {
           <div className={clsx("image")}></div>
         </div>
         {type ==="challenge" &&<div className={clsx(style.joinersDetails)}>2 friends joined</div>}
-        {type ==="task" &&<div className={clsx(style.joinButton)}>+</div>}
+        {type ==="task" &&<div className={clsx(style.joinButton)}><span>+</span></div>}
       </div>
       {type === "challenge" && <ProgressBar style={{'--track-width':"4rem"}} className={clsx(style.challengeProgress)} percent={25} />}
     </div>

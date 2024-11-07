@@ -53,16 +53,23 @@
   flex-direction: row !important;
   gap:10rem;
   align-items: center;
+  justify-content: right;
 }
 
 .joinButton{
-  font-size:24rem;
-  line-height: 14rem;
-  width:24rem;
-  height:24rem;
+  font-size:18rem;
+  line-height: 0;
+  width:28rem;
+  height:28rem;
+  box-sizing: border-box;
   display:flex;
   align-items: center;
   justify-content: center;
+  border-radius:8rem;
+  border:solid 1rem #9b9ba1;
+  
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 .chalPadding {
