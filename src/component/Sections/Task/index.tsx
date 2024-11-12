@@ -10,6 +10,8 @@ const TaskSection = memo(() => {
     <div className={clsx(style.container)}>
       <SectionName section={"Tasks"} viewAll={() => alert("view ALl")} />
       <TaskCard />
+      <TaskCard />
+      <TaskCard />
     </div>
   );
 });
