@@ -66,8 +66,10 @@ const Homepage = memo(() => {
         <Progression />
         <Challenge />
         <TaskSection />
-        <Footer />
-      </div>
+        <Challenge />
+        <TaskSection />
+      </div> 
+      <Footer />
     </div>
   );
 });

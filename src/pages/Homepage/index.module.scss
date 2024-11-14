@@ -1,11 +1,16 @@
 .container {
   background: #f6f9ff;
-  min-height: 100vh;
+   height: 100vh;
   width: 390rem;;
+
+  position: relative;
   .body{
     display: flex;
     flex-direction: column;
     gap:16rem;
+    overflow: auto;
+    height:576rem;
+    padding-bottom:40rem;
   }
 }
 
