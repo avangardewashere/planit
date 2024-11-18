@@ -6,7 +6,7 @@
   padding: 2rem;
   text-align: center;
   --gradient-blue:linear-gradient(25deg,#6B73FF,#000DFF);
-  filter:invert(80%)
+  /* filter:invert(80%) */
 }
 
  
