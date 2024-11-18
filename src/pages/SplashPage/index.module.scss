@@ -1,10 +1,14 @@
 .container {
   width: 390rem;
   height: 100vh;
-
+  background: var(--gradient-blue);
+  color: white;
+  font-size: 24rem;
+  font-weight: bold;
+  font-family: arial;
   display: flex;
   // flex-direction: column;
   gap: 20rem;
   justify-content: center;
 }
- 
+

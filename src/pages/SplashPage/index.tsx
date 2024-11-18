@@ -6,7 +6,7 @@ import SplashIntro from "./components/intro";
 const Splash = memo(() => {
   return (
     <div className={clsx(style.container)}>
-    <SplashIntro/>
+      <SplashIntro />
     </div>
   );
 });
