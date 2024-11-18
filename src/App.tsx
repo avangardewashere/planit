@@ -1,8 +1,18 @@
 import "./App.css";
-import Homepage from "./pages/Homepage";
+import routes from "./router";
 
-function App() {
-  return <Homepage />;
-}
+import { memo } from "react";
+import { BrowserRouter, useRoutes } from "react-router-dom";
+
+const Router = () => {
+  return useRoutes(routes);
+};
+const App = memo(() => {
+  return (
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  );
+});
 
 export default App;
