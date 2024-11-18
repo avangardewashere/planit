@@ -1,34 +1,10 @@
 .container {
   width: 390rem;
   height: 100vh;
-  background: var(--gradient-blue);
-  color: white;
-  font-size: 24rem;
-  font-weight: bold;
-  font-family: arial;
+
   display: flex;
   // flex-direction: column;
   gap: 20rem;
   justify-content: center;
 }
-
-.splashIntro {
-  .logo {
-    display: flex;
-    flex-direction: column;
-    gap: 20rem;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 56rem;
-      aspect-ratio: 1;
-    }
-  }
-  img.splashBg {
-    width: 390rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
+ 
