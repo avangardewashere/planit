@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  width: 390rem;
+//   width: 390rem;
+justify-content: center;
+  background:red;
+  height:500rem;
   img.illustration {
-    width: 350rem;
-    height: 337rem;
-
+   
+	margin-inline:auto;
     gap: 4rem;
   }
   .caption {

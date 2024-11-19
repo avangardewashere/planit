@@ -1,3 +1,9 @@
 .container{
 	width:390rem;
+	display: flex;
+	justify-content: center;
+		.splashSwiper{
+			display: flex;
+			justify-content: center;
+		}
 }
