@@ -1,0 +1,27 @@
+.container {
+	display:flex;
+	flex-direction: column;
+	gap:6rem;
+	width:390rem;
+  img.illustration {
+    width: 350rem;
+    height: 337rem;
+ 
+    gap: 4rem;
+  }
+  .caption {
+    width: 343rem;
+    height: 184rem;
+    font-size: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    b {
+      font-size: 24rem;
+      font-weight: bold;
+    }
+    span {
+		font-weight:300;
+    }
+  }
+}
