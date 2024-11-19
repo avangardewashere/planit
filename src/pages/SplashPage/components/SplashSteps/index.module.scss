@@ -1,12 +1,12 @@
 .container {
-	display:flex;
-	flex-direction: column;
-	gap:6rem;
-	width:390rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  width: 390rem;
   img.illustration {
     width: 350rem;
     height: 337rem;
- 
+
     gap: 4rem;
   }
   .caption {
@@ -14,14 +14,17 @@
     height: 184rem;
     font-size: 18rem;
     display: flex;
+	justify-content: flex-start;
+	text-align:start;
     flex-direction: column;
     gap: 4rem;
+	padding:8rem;
     b {
       font-size: 24rem;
       font-weight: bold;
     }
     span {
-		font-weight:300;
+      font-weight: 300;
     }
   }
 }
