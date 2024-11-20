@@ -1,13 +1,30 @@
 .container {
   display: flex;
-  justify-content: space-between;
-  width: 345rem;
-  height: 20rem;
-  font-size: 16rem;
+  justify-content: flex-start;
+  width: 390rem;
+  padding:22.5rem;
+  height: 70rem;
+  font-size: 22rem;
   align-items: center;
   margin-inline:auto;
   font-family: abnb-md;
   color: #040415;
+  gap:10rem;
+  font-weight:abold;
+  background:white;
+  .chevron{
+    width:48rem;
+    height:48rem;
+    border:#040415 solid 1rem;
+    border-radius: 14rem;  align-items: center;
+    display: flex;
+    justify-content: center;
+    img{
+      width:24rem;
+      height:24rem;
+    }
+
+  }
   .viewAll {
     font-size: 14rem;
     color: #3843FF;
