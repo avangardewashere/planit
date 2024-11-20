@@ -15,8 +15,8 @@ const LogButton = memo((props: LogButton) => {
   };
   return (
     <div className={clsx(style.container)} onClick={handleAction}>
-      <img src={imgSrc && ""} alt="log-buttons" />
-      <span>{text && "log-in"}</span>
+      <img src={imgSrc ?? ""} alt="log-buttons" />
+      <span>{text ?? "log-in"}</span>
     </div>
   );
 });

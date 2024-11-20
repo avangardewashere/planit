@@ -1,15 +1,33 @@
-.container{
-	width:343rem;
-	margin:0 auto;
-	display: flex;
-	gap:8rem;
-	flex-direction: column;
-	color:black;
-	.subButtons{
-		display:flex;
-		justify-content: space-around;
-		width: 100%;
-
-	}
-	
+.container {
+  width: 343rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 8rem;
+  flex-direction: column;
+  color: black;
+  .splashActions {
+    display: flex;
+    font-size: 12rem;
+    width: 100%;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	gap:10rem 14rem;
+    &:first-child {
+      width: 345rem;
+	border-radius: 40rem !important;
+      height: 56rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    :not(:first-child) {
+	padding: 6rem 9rem !important;
+      width: fit-content;
+      padding: 4rem;
+      height: 36rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
