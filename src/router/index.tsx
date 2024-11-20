@@ -1,3 +1,4 @@
+import AuthPage from "../pages/Authpage"
 import Homepage from "../pages/Homepage"
 import Splash from "../pages/SplashPage"
 
@@ -11,6 +12,10 @@ const routes = [
   {
     path: "/home",
     element: <Homepage/>,
+  },
+  {
+    path: "/auth",
+    element: <AuthPage />,
   },
 
 ]

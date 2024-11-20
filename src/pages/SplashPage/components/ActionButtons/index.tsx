@@ -6,16 +6,21 @@ import emailImg from "./../../../../assets/images/splash/emailLogin.png";
 import appleImg from "./../../../../assets/images/splash/Apple.png";
 import googleImg from "./../../../../assets/images/splash/GoogleIcon.png";
 import facebookImg from "./../../../../assets/images/splash/facebook.png";
+import { useNavigate } from "react-router-dom";
 
 const SplashActions = memo(() => {
+
+  const navigate = useNavigate();
+  const handleEmailLogin = () =>{
+	navigate("/auth")
+  }
+
   const actionData = [
     {
       id: 101,
       text: "Continue with Email",
       imgSrc: emailImg,
-      action: () => {
-        console.log("hello");
-      },
+      action:  handleEmailLogin,
     },
     {
       id: 102,
@@ -48,7 +53,7 @@ const SplashActions = memo(() => {
       <div className={clsx(style.splashActions)}>
         {actionData?.map((item, index) => {
           return (
-            <LogButton key={index} imgSrc={item.imgSrc} text={item.text} />
+            <LogButton action={item.action} key={index} imgSrc={item.imgSrc} text={item.text} />
           );
         })}
       </div>

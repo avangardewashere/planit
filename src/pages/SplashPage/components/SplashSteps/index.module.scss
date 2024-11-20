@@ -14,13 +14,13 @@ justify-content: center;
   .caption {
     width: 343rem;
     height: 184rem;
-    font-size: 18rem;
+    font-size: 16rem;
     display: flex;
 	justify-content: flex-start;
 	text-align:start;
     flex-direction: column;
     gap: 4rem;
-	padding:8rem;
+	padding:8rem 12rem;
     b {
       font-size: 24rem;
       font-weight: bold;
