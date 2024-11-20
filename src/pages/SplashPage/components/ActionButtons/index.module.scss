@@ -12,16 +12,17 @@
     flex-wrap: wrap;
 	justify-content: space-between;
 	gap:10rem 14rem;
+	background:red;
     &:first-child {
       width: 345rem;
-	border-radius: 40rem !important;
+	  border-radius: 40rem !important;
       height: 56rem;
       display: flex;
       align-items: center;
       justify-content: center;
     }
     :not(:first-child) {
-	padding: 6rem 9rem !important;
+	  padding: 6rem 9rem !important;
       width: fit-content;
       padding: 4rem;
       height: 36rem;
@@ -29,5 +30,10 @@
       align-items: center;
       justify-content: center;
     }
+  }
+  span.terms{
+	font-size:10rem;
+    margin-top:60rem;
+	color:aliceblue;
   }
 }

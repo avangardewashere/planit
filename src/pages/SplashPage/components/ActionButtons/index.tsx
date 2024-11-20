@@ -8,7 +8,6 @@ import googleImg from "./../../../../assets/images/splash/GoogleIcon.png";
 import facebookImg from "./../../../../assets/images/splash/facebook.png";
 
 const SplashActions = memo(() => {
-
   const actionData = [
     {
       id: 101,
@@ -53,6 +52,7 @@ const SplashActions = memo(() => {
           );
         })}
       </div>
+      <span className={clsx(style.terms)}>By continuing you agree Terms of Services & Privacy Policy</span>
     </div>
   );
 });
