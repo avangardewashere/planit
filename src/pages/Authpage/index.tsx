@@ -13,7 +13,7 @@ const AuthPage = memo(() => {
   return (
 	<div className={clsx(style.container)}>
 	  <SectionName navBack={handleNavBack} section='Continue with Email' />
-	  hi
+	  
 	</div>
   );
 });
