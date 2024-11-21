@@ -9,5 +9,47 @@
   display: flex;
   flex-direction: column;
   gap: 20rem;
-   
+  height:80vh;
+  position: relative;
+
+  .areas{
+	width:100%;
+	height:70%;
+	display:flex; 
+	justify-content: space-between;
+	flex-direction: column;
+  }
+  .formArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .actionArea {
+    width: 345rem;
+    // height: 20rem;
+    // border: #222 solid 1rem;
+	margin:0 auto;
+	color:#000DFF;
+	font-style:abnb-light;
+	font-size:14rem;
+	display: flex;
+    flex-direction: column;
+	
+	gap:20rem;
+	.loginSubmit{
+		background:var(--gradient-blue);
+		width:345rem;
+		color:white;
+		height:48rem;
+		font-size:20rem;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		border-radius:20rem;
+	}
+ 
+
+  }
 }

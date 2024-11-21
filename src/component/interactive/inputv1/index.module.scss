@@ -1,0 +1,37 @@
+.container{
+	display:flex;
+	align-items: flex-end;
+	width:345rem;
+	height:72rem;
+	position: relative;
+
+	margin:8rem;
+	// background:red;
+	span{
+		position: absolute;
+		top:10rem;
+		font-size:12rem;
+		font-family: abnb;
+		 
+		left:10rem;
+	}
+	.clearImage{
+		position: absolute;
+		right:10rem;
+		bottom:10rem;
+		width:24rem;
+		aspect-ratio: 1;
+	}
+	input{
+		border:none;
+		padding:4rem 8rem;
+		background:transparent;
+		border-bottom:2rem solid #222;
+		transition: all .3s linear;
+		&:focus{
+			outline:none;
+			border-bottom:2rem solid #3BA935;
+		}
+	}
+
+}
