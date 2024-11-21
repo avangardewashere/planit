@@ -37,7 +37,7 @@ const AuthPage = memo(() => {
       <div className={clsx(style.areas)}>
         <Swiper ref={swiperRef} indicator={false} allowTouchMove={false}>
           <Swiper.Item>
-            {" "}
+            
             <div className={clsx(style.formArea)}>
               <InputV1 label={"Email"} />
               <InputV1 label={"Password"} />
