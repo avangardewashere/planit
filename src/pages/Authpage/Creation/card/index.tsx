@@ -1,13 +1,31 @@
-import { memo } from 'react';
-import clsx from 'clsx';
-import style from './index.module.scss';
+import { memo, useState } from "react";
+import clsx from "clsx";
+import style from "./index.module.scss";
+import sample from "./../../../../assets/images/footer/discover.png"
+import { useMemoizedFn } from "ahooks";
 
-const Card = memo(() => {
-	// 160 x 134 sixe
+interface CardProps {
+	imgSrc?:string;
+	cardName?:string;
+	isSelected?:boolean;
+	select?:(data:boolean )=>void;
+}
+
+const Card = memo((props:CardProps) => {
+	const {imgSrc,cardName,isSelected,select} = props;
+	const [selected,setSelected] = useState(false);
+	const handleSelection = useMemoizedFn(()=>{
+		setSelected(!selected);
+
+		select?.(isSelected ?? false)
+
+	})
+  // 160 x 134 sixe
   return (
-	<div className={clsx(style.container)}>
-	  <span>Card</span>
-	</div>
+    <div onClick={handleSelection} className={clsx(style.container)}>
+		<img src={imgSrc ?? sample} alt="" />
+      <span>{cardName ?? "Card"}</span>
+    </div>
   );
 });
 
