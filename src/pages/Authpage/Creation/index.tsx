@@ -31,6 +31,13 @@ const CreationArea = memo(() => {
       text: "Female",
     },
   ];
+
+  const hobbySectionData = [
+    { id: 2020, name: "Surfing", icon: "🏄" },
+    { id: 2021, name: "Reading", icon: "📚" },
+    { id: 2022, name: "Sleeping", icon: "🛌" },
+    { id: 2023, name: "Watching", icon: "⌚️" },
+  ];
   return (
     <div className={clsx(style.container)}>
       <SectionName navBack={handleNavBack} section="Create an Account" />
@@ -44,21 +51,31 @@ const CreationArea = memo(() => {
             </div>
           </Swiper.Item>
           <Swiper.Item>
-            {" "}
             <div className={clsx(style.formAreaGrid)}>
-             {genderSection.map((item)=>{
-              return(
-                <SplashCard key={item.id} imgSrc={item.icon} cardName={item.text}/>
-              )
-             })}
-            
+              <div className={clsx(style.stepSection)}> What is you gender</div>
+              {genderSection.map((item) => {
+                return (
+                  <SplashCard
+                    key={item.id}
+                    imgSrc={item.icon}
+                    cardName={item.text}
+                  />
+                );
+              })}
             </div>
           </Swiper.Item>
           <Swiper.Item>
-            {" "}
-            <div className={clsx(style.formArea)}>
-              <InputV1 label={"Email"} />
-              <InputV1 label={"Password"} />
+            <div className={clsx(style.formAreaGrid)}>
+            <div className={clsx(style.stepSection)}> What are your hobbies</div>
+              {hobbySectionData.map((item) => {
+                return (
+                  <SplashCard
+                    key={item.id}
+                    imgSrc={item.icon}
+                    cardName={item.name}
+                  />
+                );
+              })}
             </div>
           </Swiper.Item>
         </Swiper>
