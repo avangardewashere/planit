@@ -18,6 +18,19 @@ const CreationArea = memo(() => {
   const handleNextStep = useMemoizedFn(() => {
     swiperRef.current?.swipeNext();
   });
+
+  const genderSection = [
+    {
+      id: 2011,
+      icon: "👦🏻",
+      text: "Male",
+    },
+    {
+      id: 2012,
+      icon: "👧🏻",
+      text: "Female",
+    },
+  ];
   return (
     <div className={clsx(style.container)}>
       <SectionName navBack={handleNavBack} section="Create an Account" />
@@ -33,8 +46,12 @@ const CreationArea = memo(() => {
           <Swiper.Item>
             {" "}
             <div className={clsx(style.formAreaGrid)}>
-             <SplashCard />
-             <SplashCard />
+             {genderSection.map((item)=>{
+              return(
+                <SplashCard key={item.id} imgSrc={item.icon} cardName={item.text}/>
+              )
+             })}
+            
             </div>
           </Swiper.Item>
           <Swiper.Item>

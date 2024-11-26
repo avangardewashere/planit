@@ -9,10 +9,12 @@ interface CardProps {
   cardName?: string;
   isSelected?: boolean;
   select?: (data: boolean) => void;
+  isEmoji?:boolean;
 }
 
 const SplashCard = memo((props: CardProps) => {
-  const { imgSrc, cardName, isSelected, select } = props;
+  const { imgSrc, cardName, isSelected, select ,isEmoji=true} = props;
+  
   const [selected, setSelected] = useState(false);
   const handleSelection = useMemoizedFn(() => {
     setSelected(!selected);
@@ -22,7 +24,8 @@ const SplashCard = memo((props: CardProps) => {
   // 160 x 134 sixe
   return (
     <div onClick={handleSelection} className={clsx(style.container,selected&&style.selected)}>
-      <img src={imgSrc ?? sample} alt="" />
+      {!isEmoji && <img src={imgSrc ?? sample} alt="" />  }
+      {isEmoji&& <div>{imgSrc}</div>}
       <span>{cardName ?? "Card"}</span>
     </div>
   );
