@@ -29,9 +29,11 @@
     display: flex;
     flex-wrap: wrap;
     width: 345rem;
-    height: 134rem;
+    min-height: 134rem;
     gap:20rem;
+    max-height:500rem;
     margin-inline:auto;
+    overflow:auto;
   }
 
   .actionArea {

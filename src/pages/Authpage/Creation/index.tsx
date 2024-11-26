@@ -37,6 +37,10 @@ const CreationArea = memo(() => {
     { id: 2021, name: "Reading", icon: "📚" },
     { id: 2022, name: "Sleeping", icon: "🛌" },
     { id: 2023, name: "Watching", icon: "⌚️" },
+    { id: 2024, name: "Video Games", icon: "🎮" },
+    { id: 2025, name: "Sports", icon: "🏀" },
+    { id: 2026, name: "Cooking", icon: "🥠" },
+    { id: 2027, name: "Shopping", icon: "🛍" },
   ];
   return (
     <div className={clsx(style.container)}>
