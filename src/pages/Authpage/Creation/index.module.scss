@@ -25,6 +25,14 @@
     align-items: center;
     justify-content: center;
   }
+  .formAreaGrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 345rem;
+    height: 134rem;
+    gap:20rem;
+    margin-inline:auto;
+  }
 
   .actionArea {
     width: 345rem;

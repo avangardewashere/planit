@@ -2,8 +2,24 @@
   width: 160rem;
   height: 134rem;
   border-radius: 16rem;
-  border: 1rem solid #eaecf0;
+  border: 2.5rem solid #eaecf0;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background:white;
+  img{
+    width:32rem;
+    height:32rem;
+  }
+  span{
+    position:absolute;
+    bottom:10rem;
+    font-size:16rem;
+  }
+}
+
+.container.selected{
+  border: 2.5rem solid green;
 }

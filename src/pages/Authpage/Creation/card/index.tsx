@@ -11,7 +11,7 @@ interface CardProps {
   select?: (data: boolean) => void;
 }
 
-const Card = memo((props: CardProps) => {
+const SplashCard = memo((props: CardProps) => {
   const { imgSrc, cardName, isSelected, select } = props;
   const [selected, setSelected] = useState(false);
   const handleSelection = useMemoizedFn(() => {
@@ -21,11 +21,11 @@ const Card = memo((props: CardProps) => {
   });
   // 160 x 134 sixe
   return (
-    <div onClick={handleSelection} className={clsx(style.container)}>
+    <div onClick={handleSelection} className={clsx(style.container,selected&&style.selected)}>
       <img src={imgSrc ?? sample} alt="" />
       <span>{cardName ?? "Card"}</span>
     </div>
   );
 });
 
-export default Card;
+export default SplashCard;

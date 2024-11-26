@@ -6,6 +6,7 @@ import { Swiper, SwiperRef } from "antd-mobile";
 import { useNavigate } from "react-router-dom";
 import { useMemoizedFn } from "ahooks";
 import SectionName from "../../../component/SectionName";
+import SplashCard from "./card";
 
 const CreationArea = memo(() => {
   const swiperRef = useRef<SwiperRef>(null);
@@ -31,8 +32,9 @@ const CreationArea = memo(() => {
           </Swiper.Item>
           <Swiper.Item>
             {" "}
-            <div className={clsx(style.formArea)}>
-              <InputV1 label={"Email"} />
+            <div className={clsx(style.formAreaGrid)}>
+             <SplashCard />
+             <SplashCard />
             </div>
           </Swiper.Item>
           <Swiper.Item>
