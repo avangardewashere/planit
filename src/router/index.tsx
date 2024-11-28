@@ -17,6 +17,10 @@ const routes = [
     path: "/auth",
     element: <AuthPage />,
   },
+  {
+    path: "/challenges",
+    element: <AuthPage />,
+  },
 
 ]
 export default routes
